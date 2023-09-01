@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start</title>
+    <link rel="icon" href="images/test12345.svg">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides1,
+        .mySlides2 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container 123 */
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            margin-right: 12%;
+            color: #353333;
+            font-weight: bold;
+            font-size: 60px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .prev {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            margin-left: 12%;
+            color: #353333;
+            font-weight: bold;
+            font-size: 60px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            transform: scale(1.1);
+            transition: transform .2s;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbt {
+            font-size: large;
+            border: none;
+            outline: none;
+            color: #2E2E2E;
+            padding: 20px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #2E2E2E;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover {
+            background-color: #ddd;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .next {
+                margin-right: 5%;
+                font-size: 40px;
+            }
+
+            .prev {
+                margin-left: 5%;
+                font-size: 40px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <span id="1"></span>
+    <!-- Början av header -->
+    <header>
+        <div id="widescreen_logo">
+            <a href="#1"><img src="images/loggan2.svg"
+                    alt="Linus Vinnå logotyp" /></a><!--Alt beskriver innehåll som inte är text (1.1.1) -->
+        </div>
+
+        <div id="smallscreen_header"><!--Header för lite skärm-->
+            <div id="smallscreen_logo">
+                <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
+            </div>
+            <a id="hamburger_menu_button">&#9776;</a><!--Burgermenu-->
+        </div>
+
+
+        <nav>
+            <ul id="largemenu"><!--Meny för stor skärm-->
+                <li><a href="index.html" id="active" class="close">Home</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="aboutMe.html" class="close">About me</a></li>
+                <div class="dropdown">
+                    <li><a href="work.html" class="close">Work <i class="fa fa-caret-down"></i></a></li>
+                    <div class="dropdown-content">
+                        <a href="work.html#2">Chas Academy</a>
+                        <a href="work.html#8">Sjöstaden Skybar</a>
+                        <a href="work.html#9">Däckskiftaren</a>
+                    </div>
+                </div>
+                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
+            </ul>
+
+            <ul id="smallmenu"><!--Meny för liten skärm-->
+                <li><a href="#1" id="active2" class="close">Home</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="aboutMe.html" class="close">About me</a></li>
+                <li><a href="work.html" class="close">Work</a></li>
+                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
+            </ul>
+        </nav>
+    </header><!-- Slut av header -->
+
+    <div class="banner"> <!-- Början av banner -->
+
+        <div class="banner_left">
+            <h1>UX DESIGNER PORTFOLIO</h1> <!--Rubrik-->
+            <div id="bottom">
+                <a href="#3" id="view_work_button">VIEW MY WORK</a> <!--Knapp som vid klick skrollar ned till Work-->
+            </div>
+        </div>
+        <div class="banner_right">
+            <img id="header_image" src="images/Component_123.png" alt="Bild på mig" /> <!--Profilbild-->
+            <p id="hej123">I am Linus Dagerfall Vinnå</p>
+            <p id="hej1234">UX designer and Android Developer</p>
+        </div>
+    </div> <!-- Slutet av banner -->
+
+    <div id="content_below_banner">
+
+        <span id="2"></span>
+
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title1234">
+                <h3>SKILLS</h3>
+            </div>
+        </div>
+
+        <div class="horizontal_image_div4"> <!-- Ikoner för färdigheter  -->
+            <img class="sectionimage3" alt="Ikon för Research." src="images/research.png" />
+            <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements.png" />
+            <img class="sectionimage3" alt="Ikon för App development." src="images/app.png" />
+            <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb.png" />
+            <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping.png" />
+        </div>
+
+        <div class="horizontal_image_div5"> <!-- Ikoner för färdigheter  -->
+            <img class="sectionimage5" alt="Ikon för Research." src="images/research2.png" />
+            <img class="sectionimage5" alt="Ikon för Requierments." src="images/requirements2.png" />
+            <img class="sectionimage5" alt="Ikon för App development." src="images/app2.png" />
+            <img class="sectionimage5" alt="Ikon för Webb development." src="images/webb2.png" />
+            <img class="sectionimage5" alt="Ikon för Prototyping." src="images/prototyping2.png" />
+        </div>
+
+    </div>
+
+
+    <div id="content_below_banner">
+
+        <span id="3"></span>
+
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title123">
+                <h3>WORK</h3>
+            </div>
+        </div>
+
+        <div id="wideversion_gallery"> <!--Sektionen Work för stor skärm-->
+
+            <div id="side_gallery_nav"> <!--Vänstra menyn för sektionen Work-->
+                <img id="wideversion_gallery_box1" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas(); />
+                <img id="wideversion_gallery_box3" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med Figma" src="images/sjostaden_banner2.png" onclick=figma(); />
+                <img id="wideversion_gallery_box2" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med WJC 2024" src="images/dack_thumb.png" onclick=hockey(); />
+            </div>
+
+
+            <div id="main_gallery"> <!--Högra delen för sektionen Work-->
+                <img id="wideversion_big_gallery_image" src="images/chasacademy.png" alt="Bild över valt projekt" />
+                <!--Stor bild till höger för valt projekt-->
+                <div id="bottom_main"> <!--Sektion med info om valt projekt för stor skärm-->
+                    <div id="left_main">
+                        <h4 id="gallery_title">Redesign of Chas Academy</h4> <!--Rubrik för valt projekt-->
+                        <a href="work.html#2" id="readmore_btn">READ MORE</a> <!--Läs mer-knapp-->
+                    </div>
+                    <p id="wide_paragraph">We were given a task to develop a prototype for a website.<br><br>
+
+                        We chose to
+                redesign our school's website (Chas Academy AB). We focused on the desktop version but we also...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="smallversion_gallery">
+
+        <h4 id="smallscreen_gallery_title">Work</h4> <!--Rubrik för sektionen Work för liten skärm-->
+
+        <div id="big_image_section_smallversion">
+            <img id="smallversion_big_gallery_image" alt="Bild över valt projekt" src="images/chasacademy.png" />
+            <!--Bild för valt projet för liten skärm-->
+        </div>
+
+        <div id="middle_section_smallversion"> <!--Meny för liten skärm-->
+            <img id="smallversion_gallery_box1" class="smallversion_gallery_image"
+                alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas2(); />
+                <img id="smallversion_gallery_box3" class="smallversion_gallery_image"
+                alt="Bild i meny över projektet med Figma" src="images/sjostaden_banner2.png" onclick=figma2(); />
+            <img id="smallversion_gallery_box2" class="smallversion_gallery_image"
+                alt="Bild i meny över projektet med WJC 2024" src="images/dack_thumb.png" onclick=hockey2(); />
+        </div>
+
+        <div id="bottom_section_gallery_smallversion"> <!--Sektion med info om valt projekt för liten skärm-->
+            <h4 id="gallery_title_smallversion">Redesign of Chas Academy</h4>
+            <!--Rubrik för valt projekt för liten skärm-->
+            <p id="small_paragraph">We were given a task to develop a prototype for a website. We chose to
+                redesign our school's website (Chas Academy AB). We focused on the desktop version but we also
+                made 3 detailed wireframes for mobile.</p>
+            <a href="work.html" id="readmore_btn_small">READ MORE</a> <!--Läs mer knapp för liten skärm-->
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="images/slide_show1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show5.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show6.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+
+    <!-- Början av footer -->
+    <span id="4"></span>
+    <footer>
+        <div id="footer_row">
+            <div id="footer_left"> <!--Vänstra delen av footern-->
+                <h3>Contact me</h3> <!--Rubrik för footern-->
+                <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br> <!--Email länk-->
+                <div id="resume">
+                    <a href="CV.doc.pdf" target="_blank"><img id="pdfimage" alt="PDF logga"
+                            src="images/pdf_vector.png" /></a>
+                    <!--PDF ikon-->
+                    <p id="resume_text">
+                        <a href="Resume.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a> <!--Länk till CV-->
+                    </p>
+                </div>
+            </div>
+            <div id="footer_right"> <!--Högra delen av footern-->
+                <a href="https://www.instagram.com/linusdagerfallvinna/?hl=sv" target="_blank"><img
+                        class="social_media_image" alt="Instagram logga" src="images/instagram.png" /></a>
+                <a href="https://www.facebook.com/linus.dagerfallvinna.5/" target="_blank"><img
+                        class="social_media_image" alt="Facebook logga" src="images/facebookimage.png" /></a>
+                <a href="https://github.com/linusdagerfallvinna/" target="_blank"><img class="social_media_image"
+                        alt="Github logga" src="images/githubimage.png" /></a>
+                <a href="https://www.linkedin.com/in/linus-dagerfall-vinn%C3%A5-7449a313b/" target="_blank"><img
+                        class="social_media_image" alt="Linkedin logga" src="images/linkedinimage.png" /></a>
+                <!--Ikon för sociala medier-->
+            </div>
+        </div>
+    </footer>
+    <div class="case_study_section_title321">
+        <div id="footer_left"> <!--Vänstra delen av footern-->
+            <div id="resume">
+
+                <!--PDF ikon-->
+                <p>© 2023 LINUS DAGERFALL VINNÅ</p>
+            </div>
+        </div>
+        <div id="footer_right"> <!--Högra delen av footern-->
+            <div id="resume">
+                <a href="#1" target="_blank">TILL TOPPEN</a>
+                <a href="#1" target="_blank"><img id="arrowimage" alt="PDF logga" src="images/arrow.png" /></a>
+            </div>
+        </div>
+    </div>
+    <!-- Slutet av footer -->
+    <script src="gallery_script.js"></script>
+    <script src="weather.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
