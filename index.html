@@ -6,7 +6,7 @@
     <title>Start</title>
     <link rel="icon" href="images/test12345.svg">
     <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -14,131 +14,6 @@
     <script src="script.js"></script>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8">
-
-    <style>
-        * {
-            box-sizing: border-box
-        }
-
-        .mySlides1,
-        .mySlides2 {
-            display: none
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        /* Slideshow container 123 */
-        .slideshow-container {
-            position: relative;
-            margin: auto;
-        }
-
-        /* Next & previous buttons */
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            margin-right: 12%;
-            color: #353333;
-            font-weight: bold;
-            font-size: 60px;
-            transition: 0.6s ease;
-            user-select: none;
-        }
-
-        .prev {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            margin-left: 12%;
-            color: #353333;
-            font-weight: bold;
-            font-size: 60px;
-            transition: 0.6s ease;
-            user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-        }
-
-        /* On hover, add a grey background color */
-        .prev:hover,
-        .next:hover {
-            transform: scale(1.1);
-            transition: transform .2s;
-            color: black;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbt {
-            font-size: large;
-            border: none;
-            outline: none;
-            color: #2E2E2E;
-            padding: 20px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: #2E2E2E;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover {
-            background-color: #ddd;
-        }
-
-        @media screen and (max-width:768px) {
-
-            .next {
-                margin-right: 5%;
-                font-size: 40px;
-            }
-
-            .prev {
-                margin-left: 5%;
-                font-size: 40px;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
@@ -154,147 +29,146 @@
             <div id="smallscreen_logo">
                 <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
             </div>
-            <a id="hamburger_menu_button">&#9776;</a><!--Burgermenu-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="#1">Home</a>
+                <a href="work.html">Cases</a>
+            </div>
         </div>
 
 
         <nav>
             <ul id="largemenu"><!--Meny för stor skärm-->
-                <li><a href="index.html" id="active" class="close">Home</a></li>
                 <!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="aboutMe.html" class="close">About me</a></li>
+
                 <div class="dropdown">
-                    <li><a href="work.html" class="close">Work <i class="fa fa-caret-down"></i></a></li>
+                    <li><a href="work.html" class="close">Cases <i class="fa fa-caret-down"></i></a></li>
                     <div class="dropdown-content">
                         <a href="work.html#2">Chas Academy</a>
                         <a href="work.html#8">Sjöstaden Skybar</a>
                         <a href="work.html#9">Däckskiftaren</a>
+                        <a href="work.html#10">Qliro AB</a>
+
                     </div>
                 </div>
                 <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
             </ul>
 
             <ul id="smallmenu"><!--Meny för liten skärm-->
-                <li><a href="#1" id="active2" class="close">Home</a></li>
+                <li><a href="#1" class="close">Home</a></li>
                 <!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="aboutMe.html" class="close">About me</a></li>
-                <li><a href="work.html" class="close">Work</a></li>
+                <li><a href="work.html" class="close">Cases</a></li>
                 <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
             </ul>
         </nav>
     </header><!-- Slut av header -->
 
     <div class="banner"> <!-- Början av banner -->
+        <img id="header_image" src="images/Component 51.png" alt="Bild på mig" /> <!--Profilbild-->
 
-        <div class="banner_left">
-            <h1>UX DESIGNER PORTFOLIO</h1> <!--Rubrik-->
-            <div id="bottom">
-                <a href="#3" id="view_work_button">VIEW MY WORK</a> <!--Knapp som vid klick skrollar ned till Work-->
-            </div>
-        </div>
-        <div class="banner_right">
-            <img id="header_image" src="images/Component_123.png" alt="Bild på mig" /> <!--Profilbild-->
-            <p id="hej123">I am Linus Dagerfall Vinnå</p>
-            <p id="hej1234">UX designer and Android Developer</p>
-        </div>
     </div> <!-- Slutet av banner -->
+    <div class="main" style="padding-top:6%; padding-bottom:8%;">
+        <h2>Case studies</h2>
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card33">
+                    <div class="card_image"><img src="images/chasacademy.png"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Redesign Chas Academy</h2>
+                        <p class="card_text">We were given a task to develop a prototype for a website. We chose to
+                            redesign
+                            our school's
+                            website.</p>
+                            <a href="work.html #1" style="padding:0; width: 100%;"><button class="btn card_btn">Read More</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card33">
+                    <div class="card_image"><img src="images/sjostaden_banner2.png"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Sjöstaden Skybar</h2>
+                        <p class="card_text">In this project I redesigned the website of one of the highest located
+                            restaurants in Stockholm,
+                            Sjöstaden Skybar.</p>
+                            <a href="work.html #8" style="padding:0; width: 100%;"><button class="btn card_btn">Read More</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card33">
+                    <div class="card_image"><img src="images/dack_thumb.png"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Däckskiftaren</h2>
+                        <p class="card_text">We were given an assignment to create a digital service that would
+                            facilitate tire changes for
+                            private individuals.</p>
+                            <a href="work.html #9" style="padding:0; width: 100%;"><button class="btn card_btn">Read More</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card33">
+                    <div class="card_image"><img src="images/qliro.jpg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Qliro AB</h2>
+                        <p class="card_text">Work in progress</p>
+                        <a href="work.html #10" style="padding:0; width: 100%;"><button class="btn card_btn">Read More</button></a>
+                    </div>
+                </div>
+            </li>
 
-    <div id="content_below_banner">
 
-        <span id="2"></span>
+        </ul>
+    </div>
 
-        <div class="flexbox_div1">
 
-            <div class="case_study_section_title1234">
-                <h3>SKILLS</h3>
+    <div class="main2" style="background-color: #EDEDED; padding-top:6%; padding-bottom:0%;">
+        <h2>About me</h2>
+
+        <div class="card_container123" style="padding-top:2%;">
+            <div class="card" style="background-color: #ffffff; ; padding-top: 0px;">
+                <h4 class="case_study_section_h3">Career</h4>
+                <img src="images/career2.jpg" alt="Avatar" style="width:100%; padding-top: 5%;">
             </div>
-        </div>
-
-        <div class="horizontal_image_div4"> <!-- Ikoner för färdigheter  -->
-            <img class="sectionimage3" alt="Ikon för Research." src="images/research.png" />
-            <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements.png" />
-            <img class="sectionimage3" alt="Ikon för App development." src="images/app.png" />
-            <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb.png" />
-            <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping.png" />
-        </div>
-
-        <div class="horizontal_image_div5"> <!-- Ikoner för färdigheter  -->
-            <img class="sectionimage5" alt="Ikon för Research." src="images/research2.png" />
-            <img class="sectionimage5" alt="Ikon för Requierments." src="images/requirements2.png" />
-            <img class="sectionimage5" alt="Ikon för App development." src="images/app2.png" />
-            <img class="sectionimage5" alt="Ikon för Webb development." src="images/webb2.png" />
-            <img class="sectionimage5" alt="Ikon för Prototyping." src="images/prototyping2.png" />
+            <div class="card" style="background-color: #ffffff; padding-top: 0px; margin-right: 0%;">
+                <h4 class="case_study_section_h3">Education</h4>
+                <img src="images/education2.jpg" alt="Avatar" style="width:100%; padding-top: 5%;">
+            </div>
         </div>
 
     </div>
 
 
-    <div id="content_below_banner">
+    <div class="main2" style="background-color: #EDEDED; padding-top:6%; padding-bottom:8%;">
+        <div class="card_container123" style="margin-top:4%;">
 
-        <span id="3"></span>
+            <div class="card" style="background-color: #ffffff; padding-top:0px; margin-right: 0%;">
+                <h4 class="case_study_section_h3">Skills</h4>
+                <div class="horizontal_image_div46" style="padding-left: 0%; ; padding-right: 0%; padding-top: 5%;">
 
-        <div class="flexbox_div1">
-
-            <div class="case_study_section_title123">
-                <h3>WORK</h3>
-            </div>
-        </div>
-
-        <div id="wideversion_gallery"> <!--Sektionen Work för stor skärm-->
-
-            <div id="side_gallery_nav"> <!--Vänstra menyn för sektionen Work-->
-                <img id="wideversion_gallery_box1" class="wideversion_gallery_image"
-                    alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas(); />
-                <img id="wideversion_gallery_box3" class="wideversion_gallery_image"
-                    alt="Bild i meny över projektet med Figma" src="images/sjostaden_banner2.png" onclick=figma(); />
-                <img id="wideversion_gallery_box2" class="wideversion_gallery_image"
-                    alt="Bild i meny över projektet med WJC 2024" src="images/dack_thumb.png" onclick=hockey(); />
-            </div>
-
-
-            <div id="main_gallery"> <!--Högra delen för sektionen Work-->
-                <img id="wideversion_big_gallery_image" src="images/chasacademy.png" alt="Bild över valt projekt" />
-                <!--Stor bild till höger för valt projekt-->
-                <div id="bottom_main"> <!--Sektion med info om valt projekt för stor skärm-->
-                    <div id="left_main">
-                        <h4 id="gallery_title">Redesign of Chas Academy</h4> <!--Rubrik för valt projekt-->
-                        <a href="work.html#2" id="readmore_btn">READ MORE</a> <!--Läs mer-knapp-->
-                    </div>
-                    <p id="wide_paragraph">We were given a task to develop a prototype for a website.<br><br>
-
-                        We chose to
-                redesign our school's website (Chas Academy AB). We focused on the desktop version but we also...</p>
+                    <img class="sectionimage3" alt="Ikon för Research." src="images/research.png"
+                        style="padding-left:0%;" />
+                    <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements.png" />
+                    <img class="sectionimage3" alt="Ikon för App development." src="images/app.png" />
+                    <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb.png" />
+                    <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping.png" />
+                </div>
+                <div class="horizontal_image_div5"> <!-- Ikoner för färdigheter  -->
+                    <img class="sectionimage5" style="padding-top: 0%;" alt="Ikon för Research."
+                        src="images/research2.png" />
+                    <img class="sectionimage5" alt="Ikon för Requierments." src="images/requirements2.png" />
+                    <img class="sectionimage5" alt="Ikon för App development." src="images/app2.png" />
+                    <img class="sectionimage5" alt="Ikon för Webb development." src="images/webb2.png" />
+                    <img class="sectionimage5" alt="Ikon för Prototyping." src="images/prototyping2.png" />
                 </div>
             </div>
-        </div>
-
-    </div>
-
-    <div id="smallversion_gallery">
-
-        <h4 id="smallscreen_gallery_title">Work</h4> <!--Rubrik för sektionen Work för liten skärm-->
-
-        <div id="big_image_section_smallversion">
-            <img id="smallversion_big_gallery_image" alt="Bild över valt projekt" src="images/chasacademy.png" />
-            <!--Bild för valt projet för liten skärm-->
-        </div>
-
-        <div id="middle_section_smallversion"> <!--Meny för liten skärm-->
-            <img id="smallversion_gallery_box1" class="smallversion_gallery_image"
-                alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas2(); />
-                <img id="smallversion_gallery_box3" class="smallversion_gallery_image"
-                alt="Bild i meny över projektet med Figma" src="images/sjostaden_banner2.png" onclick=figma2(); />
-            <img id="smallversion_gallery_box2" class="smallversion_gallery_image"
-                alt="Bild i meny över projektet med WJC 2024" src="images/dack_thumb.png" onclick=hockey2(); />
-        </div>
-
-        <div id="bottom_section_gallery_smallversion"> <!--Sektion med info om valt projekt för liten skärm-->
-            <h4 id="gallery_title_smallversion">Redesign of Chas Academy</h4>
-            <!--Rubrik för valt projekt för liten skärm-->
-            <p id="small_paragraph">We were given a task to develop a prototype for a website. We chose to
-                redesign our school's website (Chas Academy AB). We focused on the desktop version but we also
-                made 3 detailed wireframes for mobile.</p>
-            <a href="work.html" id="readmore_btn_small">READ MORE</a> <!--Läs mer knapp för liten skärm-->
         </div>
     </div>
 
@@ -349,20 +223,20 @@
         }
     </script>
 
-
     <!-- Början av footer -->
-    <span id="4"></span>
     <footer>
         <div id="footer_row">
             <div id="footer_left"> <!--Vänstra delen av footern-->
-                <h3>Contact me</h3> <!--Rubrik för footern-->
-                <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br> <!--Email länk-->
+                <h3 id="footer_title">Contact me</h3> <!--Rubrik för footern-->
+                <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br>
+                <!--Email länk-->
                 <div id="resume">
                     <a href="CV.doc.pdf" target="_blank"><img id="pdfimage" alt="PDF logga"
                             src="images/pdf_vector.png" /></a>
                     <!--PDF ikon-->
                     <p id="resume_text">
-                        <a href="Resume.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a> <!--Länk till CV-->
+                        <a href="CV.doc.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a>
+                        <!--Länk till CV-->
                     </p>
                 </div>
             </div>
@@ -379,6 +253,9 @@
             </div>
         </div>
     </footer>
+    <!-- Slutet av footer -->
+    </div>
+
     <div class="case_study_section_title321">
         <div id="footer_left"> <!--Vänstra delen av footern-->
             <div id="resume">
@@ -387,17 +264,18 @@
                 <p>© 2023 LINUS DAGERFALL VINNÅ</p>
             </div>
         </div>
-        <div id="footer_right"> <!--Högra delen av footern-->
+        <div id="footer_right2"> <!--Högra delen av footern-->
             <div id="resume">
-                <a href="#1" target="_blank">TILL TOPPEN</a>
+                <a href="#1" target="_blank">TO THE TOP</a>
                 <a href="#1" target="_blank"><img id="arrowimage" alt="PDF logga" src="images/arrow.png" /></a>
             </div>
         </div>
     </div>
-    <!-- Slutet av footer -->
+
     <script src="gallery_script.js"></script>
     <script src="weather.js"></script>
     <script src="script2.js"></script>
+
 </body>
 
 </html>
