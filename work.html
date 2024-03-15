@@ -62,7 +62,7 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color: #f5f2f2;
         }
 
         .dropdown:hover .dropdown-content {
@@ -70,7 +70,7 @@
         }
 
         .dropdown:hover {
-            background-color: #ddd;
+            background-color: #f5f2f2;
         }
 
         figure.zoom {
@@ -107,29 +107,36 @@
     <!-- Början av header -->
     <header>
         <div id="widescreen_logo">
-            <a href="#1"><img src="images/loggan2.svg"
+            <a href="index.html"><img src="images/loggan2.svg"
                     alt="Linus Vinnå logotyp" /></a><!--Alt beskriver innehåll som inte är text (1.1.1) -->
         </div>
 
         <div id="smallscreen_header"><!--Header för lite skärm-->
             <div id="smallscreen_logo">
-                <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
+                <a href="index.html"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
             </div>
-            <a id="hamburger_menu_button">&#9776;</a><!--Burgermenu-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="#1">Cases</a>
+            </div>
+        </div>
 
         <nav>
             <ul id="largemenu"><!--Meny för stor skärm-->
-                <li><a href="index.html" class="close">Home</a></li>
-                <!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="aboutMe.html" class="close">About me</a></li>
                 <div class="dropdown">
-                    <li><a href="work.html" id="active" class="close">Work <i class="fa fa-caret-down"></i></a></li>
+                    <li><a href="work.html" id="active" class="close">Cases <i class="fa fa-caret-down"></i></a></li>
                     <div class="dropdown-content">
                         <a href="#2">Chas Academy</a>
                         <a href="#8">Sjöstaden Skybar</a>
                         <a href="#9">Däckskiftaren</a>
+                        <a href="#10">Qliro AB</a>
+                        <!--<a href="#10">Qliro AB</a>-->
                     </div>
                 </div>
                 <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
@@ -138,22 +145,11 @@
             <ul id="smallmenu"><!--Meny för liten skärm-->
                 <li><a href="index.html" class="close">Home</a></li>
                 <!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="aboutMe.html" class="close">About me</a></li>
-                <li><a href="work.html" id="active2" class="close">Work</a></li>
+                <li><a href="#2" class="close">Cases</a></li>
                 <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
             </ul>
         </nav>
     </header><!-- Slut av header -->
-    <div class="banner2"> <!-- Början av banner -->
-        <h2>WORK</h2> <!--Rubrik-->
-    </div> <!-- Slutet av banner -->
-
-    <div id="navbar">
-        <a href="#2">Chas Academy</a>
-        <a href="#8">Sjöstaden Skybar</a>
-        <a href="#9">Däckskiftaren</a>
-    </div>
-
 
     <span id="2"></span>
     <section class="parallax"> <!--parallax div--> <!--Banner-->
@@ -162,7 +158,7 @@
                 <div id="item1">
                     <div id="top_div">
                         <h1 class="title">Redesign of Chas Academy</h1> <!-- Rubrik -->
-                        <img class="casestudylogo" alt="Chas Academy logga" src="images/chaslogo.png" /> <!-- Logga -->
+                        <img class="casestudylogo" alt="Chas Academy logga" src="images/chaslogo.png" /> <!--Logga-->
                     </div>
                 </div>
                 <div id="item2">
@@ -180,358 +176,326 @@
         </div>
     </section>
 
-    <div class="content">
+    <div class="section_content">
+        <div class="content">
 
-        <div class="horizontal_image_div"> <!-- Meny för sidans olika delar -->
-            <a href="#3"><img class="sectionimage" alt="Ikon för delen Empathize." src="images/empathize.png" /></a>
-            <a href="#4"><img class="sectionimage" alt="Ikon för delen Define." src="images/define.png" /></a>
-            <a href="#5"><img class="sectionimage" alt="Ikon för delen Ideate." src="images/ideate.png" /></a>
-            <a href="#6"><img class="sectionimage" alt="Ikon för delen Prototype." src="images/prototype.png" /></a>
-            <a href="#7"><img class="sectionimage" alt="Ikon för delen Testing." src="images/testing.png" /></a>
-        </div>
-
-        <span id="3"></span>
-        <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
-            <div class="case_study_section_title">
-                <h3>EMPATHIZE</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
-            </div>
-            <!--<div class="ingress">
+            <span id="3"></span>
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>1. Empathize</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+                <!--<div class="ingress">
                 <p>We were given a task to develop a prototype for a website. We chose to redesign our school's
                     website (Chas Academy AB). We focused on the desktop version but we also made 3 detailed wireframes
                     for mobile.
                     The purpose of the assignment was for us to get used to work with the phases of the Design Thinking
                     Process. From researching the users' needs to testing our prototypes with the users.</p>
             </div>-->
-        </div>
+            </div>
 
-        <div class="flexbox_div2">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
-                <p><b>We were given a task to develop a prototype for a website. We chose to redesign our school's
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>We were given a task to develop a prototype for a website. We chose to redesign our school's
                         website (Chas Academy AB). We focused on the desktop version but we also made 3 detailed
                         wireframes
                         for mobile.
                         The purpose of the assignment was for us to get used to work with the phases of the Design
                         Thinking
-                        Process. From researching the users' needs to testing our prototypes with the users.</b><br><br>
-                    We started to formulate a problem statement to get a clearer picture of which problem should be
-                    investigated and solved. Because we wanted to find out how to best shape a website that attracts
-                    students, we came up with the problem statement: "How do we get more people to choose Chas Academy
-                    over other schools?". Then we tried to expand our knowledge of the area by checking out the
-                    existing
-                    Chas Academy site as well as other similar sites.</p>
-                <!-- Bild -->
+                        Process. From researching the users' needs to testing our prototypes with the users.<br><br>
+                        We started to formulate a problem statement to get a clearer picture of which problem should be
+                        investigated and solved. Because we wanted to find out how to best shape a website that attracts
+                        students, we came up with the problem statement: "How do we get more people to choose Chas
+                        Academy
+                        over other schools?". Then we tried to expand our knowledge of the area by checking out the
+                        existing
+                        Chas Academy site as well as other similar sites.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/thinking2.png" />
+                    <!-- Bild -->
+                </div>
             </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen DEFINE -->
-                <img class="content_div_image" alt="Bild på arbetet med affinity diagram" src="images/thinking2.png" />
-                <p><br><br>When we felt we had a better understanding, we
-                    prepared questions for our UX research where we chose to work with in-depth interviews and a survey.
-                    We chose this combination as it would give us both qualitative and quantitative data.</p>
+
+            <div class="flexbox_div112">
+
+                <div class="case_study_section_title">
+                    <h4 class="case_study_section_h3">User research</h4>
+                    <!-- Underrubrik under EMPATHIZE för sektionen USER RESEARCH  -->
+                </div>
             </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>When we were done with the interview guide and had written the questions for the survey, we
+                        invited
+                        acquaintances to an interview and sent the survey out on social media so that it could be out
+                        over
+                        the weekend.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram" src="images/stats.png" />
+                    <!-- Bild -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>During the time that the survey was out there were 21 people who answered it. Due to the limited
+                        time in our school project, we had to settle for these answers although the statistics would
+                        have
+                        been more credible with more participants.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram" src="images/stats2.png" />
+                    <!-- Bild -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>We then interviewed our participants and diligently recorded and documented what they
+                        said.<br><br>
+
+                        From the data we received from the research, it was possible to see, among other things, that
+                        people
+                        looking for a school want a website that looks professional, has good search functions and
+                        contains
+                        easily accessible information as well as links to the school portal. It was also possible to see
+                        that the vast majority could imagine applying for an IT education without previous
+                        experience.<br><br>The Chas Academy website received mostly negative reviews when we showed it
+                        during the interviews. The
+                        participants felt that the page did not match their expectations of a school website that has an
+                        UX-design course. But it also received some positive reactions. The reactions of the
+                        participants
+                        are shown below:</p>
+                    <!-- Bild -->
+                </div>
+            </div>
+
+            <div class="flexbox_div3">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
+                    <p>Painpoints:
+                        <li>Expected more<br></li>
+                        <li>Does not represent the UX-design course<br></li>
+                        <li>Missing color<br></li>
+                        <li>Need more info about the courses<br></li>
+                        <li>Too much whitespaces at the logo<br></li>
+                        <li>Need more pictures<br></li>
+                        <li>Too much text <br></li>
+                        <li>Need more info about the school at HOME<br></li>
+                        <li>Main menu is too big<br></li>
+                        <li>Unnecessary arrows on the slide show<br></li>
+                        <li>Need more references<br></li>
+                        <li>Hard to find contact info<br></li>
+                    </p>
+                    <p>
+                        Positive feedback:
+                        <li>Easy to navigate<br></li>
+                        <li>Easy to get to "How to apply"<br></li>
+                        <li>Elegant website<br></li>
+                        <li>The website is structured<br></li>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="flexbox_div112">
+        <div class="content">
+            <span id="4"></span>
 
-            <div class="case_study_section_title">
-                <h4 class="case_study_section_h3">USER RESEARCH</h4>
-                <!-- Underrubrik under EMPATHIZE för sektionen USER RESEARCH  -->
-            </div>
-        </div>
-
-        <div class="flexbox_div2">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                <img class="content_div_image"
-                    alt="Bild över statestik för Kön i undersökningen. 38,1% kvinnor 69,9% män."
-                    src="images/stats.png" /> <!-- Bild -->
-            </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
-                <p>When we were done with the interview guide and had written the questions for the survey, we invited
-                    acquaintances to an interview and sent the survey out on social media so that it could be out over
-                    the weekend.<br><br>
-                    During the time that the survey was out there were 21 people who answered it. Due to the limited
-                    time in our school project, we had to settle for these answers although the statistics would have
-                    been more credible with more participants.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="flexbox_div3">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                <p>We then interviewed our participants and diligently recorded and documented what they said.<br><br>
-
-                    From the data we received from the research, it was possible to see, among other things, that people
-                    looking for a school want a website that looks professional, has good search functions and contains
-                    easily accessible information as well as links to the school portal. It was also possible to see
-                    that the vast majority could imagine applying for an IT education without previous
-                    experience.<br><br>The Chas Academy website received mostly negative reviews when we showed it
-                    during the interviews. The
-                    participants felt that the page did not match their expectations of a school website that has an
-                    UX-design course. But it also received some positive reactions. The reactions of the participants
-                    are shown below:</p>
-            </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
-                <img class="content_div_image"
-                    alt="Bild över statestik för om personer har hört talas om skolan innan. 28,6% ja och 71,4% nej."
-                    src="images/stats2.png" />
-                <p><br><br></p>
-                <img class="content_div_image"
-                    alt="Bild över statestik för om personer har hört talas om skolan innan. 28,6% ja och 71,4% nej."
-                    src="images/stats3.png" />
-            </div>
-        </div>
-
-        <div class="flexbox_div3">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                <p class="ingress2"> Painpoints:<br><br>
-                </p>
-                <p>
-                    <li>Expected more<br></li>
-                    <li>Does not represent the UX-design course<br></li>
-                    <li>Missing color<br></li>
-                    <li>Need more info about the courses<br></li>
-                    <li>Too much whitespaces at the logo<br></li>
-                    <li>Need more pictures<br></li>
-                    <li>Too much text <br></li>
-                    <li>Need more info about the school at HOME<br></li>
-                    <li>Main menu is too big<br></li>
-                    <li>Unnecessary arrows on the slide show<br></li>
-                    <li>Need more references<br></li>
-                    <li>Hard to find contact info<br></li>
-                </p>
-            </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
-                <p class="ingress2"> Positive feedback:<br><br>
-                <p>
-                    <li>Easy to navigate<br></li>
-                    <li>Easy to get to "How to apply"<br></li>
-                    <li>Elegant website<br></li>
-                    <li>The website is structured<br></li>
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="content">
-        <span id="4"></span>
-
-        <div class="flexbox_div1">
-
-            <div class="case_study_section_title">
-                <h3>DEFINE</h3> <!-- Rubrik för sektionen DEFINE  -->
-            </div>
-            <!--<div class="ingress">
-                <p>Efter vår research sammanställde vi först våra anteckningar i dokument och skrev sedan ned relevanta
-                    fynd på post-it lappar. Vi satte sedan upp dom på en whiteboardtavla en efter en och grupperade ihop
-                    de som vi tyckte passade ihop. Vi fick fram 6 stycken olika grupperingar: Val av skola, personlig
-                    info om användaren, skolgång på yrkeshögskola, studiesätt, vidareutbildning och positiv/negativ
-                    feedback på dagens hemsida. </p>
+            <div class="flexbox_div15"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>2. Define</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+                <!--<div class="ingress">
+                <p>We were given a task to develop a prototype for a website. We chose to redesign our school's
+                    website (Chas Academy AB). We focused on the desktop version but we also made 3 detailed wireframes
+                    for mobile.
+                    The purpose of the assignment was for us to get used to work with the phases of the Design Thinking
+                    Process. From researching the users' needs to testing our prototypes with the users.</p>
             </div>-->
-        </div>
-
-        <div class="flexbox_div2">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
-                <img class="content_div_image" alt="Bild på arbetet med affinity diagram" src="images/affinity1.jpg" />
-                <!-- Bild -->
             </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen DEFINE -->
-                <p>After our research, we first compiled our notes into documents and then wrote down relevant findings
-                    on post-it notes.
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>After our research, we first compiled our notes into documents and then wrote down relevant
+                        findings
+                        on post-it notes. We then put them up on a whiteboard one by one and grouped the ones we thought
+                        fit
+                        together.<br><br>
+                        We came up with 6 different groupings: Choice of school, personal information about the user,
+                        school
+                        attendance at a university of applied sciences, method of study, further education and
+                        positive/negative feedback on today's website.
+                        Then we chose to prioritize the 3 most important groupings. We chose to prioritize:
+                        Positive/negative feedback on today's website, choice of school and method of study.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/affinity1.jpg" />
+                    <p> <br><br>Here is the result of our affinity diagram. Using this method, it became
+                        much clearer what needs to be done to create a website that meets the users' needs.<br><br></p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/affinity12.jpg" />
+                    <!-- Bild -->
+                </div>
+            </div>
+
+            <div class="flexbox_div112">
+
+                <div class="case_study_section_title">
+                    <h4 class="case_study_section_h3">Create personas</h4>
+                    <!-- Underrubrik under EMPATHIZE för sektionen USER RESEARCH  -->
+                </div>
+            </div>
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>Based on the "personal info" grouping in our affinity diagram, we were able to distinguish
+                        patterns
+                        and common factors among users. We created two personas. Patrick the ambitious and active
+                        39-year-old who works in IT and the 25-year-old student Liam who is caring and stubborn.
+                    </p>
+                    <!-- Bild -->
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/persona1.png" />
                     <br><br>
-                    We then put them up on a whiteboard one by one and grouped the ones we thought fit together. We came
-                    up with 6 different groupings: Choice of school, personal information about the user, school
-                    attendance at a
-                    university of applied sciences, method of study, further education and positive/negative feedback on
-                    today's website.
-                    <br><br>
-
-                    Then we chose to prioritize the 3 most important groupings. We chose to prioritize:
-                    Positive/negative feedback on today's website, choice of school and method of study.
-                </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/persona2.png" />
+                </div>
             </div>
         </div>
 
-        <div class="flexbox_div21">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
-                <p><b>The final affinity diagram</b><br><br>
-                    Here is the result of our affinity diagram. Using this method, it became
-                    much clearer what needs to be done to create a website that meets the users' needs.<br><br></p>
-                <img class="content_div_image" alt="Bild på arbetet med affinity diagram" src="images/affinity12.jpg" />
-                <!-- Bild -->
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>3. Ideate</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
             </div>
-        </div>
 
-        <h4 class="case_study_section_h3">CREATE PERSONAS</h4>
-        <!-- Underrubrik under DEFINE för sektionen CREATE PERSONAS-->
-        <div class="flexbox_div2">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen CREATE PERSONAS -->
-                <p>Based on the "personal info" grouping in our affinity diagram, we were able to distinguish patterns
-                    and common factors among users. We created two personas. Patrick the ambitious and active
-                    39-year-old who works in IT and the 25-year-old student Liam who is caring and stubborn.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="flexbox_div3">
-            <div class="left_content_div123"> <!-- Vänstra delen av innehållet för sektionen CREATE PERSONAS -->
-                <img class="content_div_image" alt="Bild på Persona" src="images/persona1.png" /> <!-- Bild-->
-            </div>
-            <div class="right_content_div123"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
-                <img class="content_div_image" alt="Bild på Persona" src="images/persona2.png" />
-            </div>
-        </div>
-
-    </div>
-
-
-    <section class="parallax3"></section> <!-- Parallax div -->
-
-    <div class="content">
-        <span id="5"></span>
-        <div class="flexbox_div1">
-
-            <div class="case_study_section_title">
-                <h3>IDEATE</h3> <!-- Rubrik för sektionen IDEATE  -->
-            </div>
-        </div>
-
-        <div class="flexbox_div2">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
-                <p><b>In the third phase, we unleash creativity and work together to get different perspectives and
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>In the third phase, we unleash creativity and work together to get different perspectives and
                         suggestions for solutions. This phase is called Ideate. It is important to never dismiss an
                         idea.
-                        Even an idea that seems bad can lead to a new angle of approach.</b><br><br>
-                    After we defined the target group and the challenge, it was time to start generating ideas for a
-                    solution.
-                    <br><br>
-                    We arranged a workshop where everyone in the group had to outline suggestions that can solve the
-                    challenges with today's website. After the workshop, we collected all the sketches and compared them
-                    with each other. We then tried to agree on what we wanted to proceed with.
+                        Even an idea that seems bad can lead to a new angle of approach.<br><br>
+                        After we defined the target group and the challenge, it was time to start generating ideas for a
+                        solution. We arranged a workshop where everyone in the group had to outline suggestions that can
+                        solve the challenges with today's website. After the workshop, we collected all the sketches and
+                        compared them with each other. We then tried to agree on what we wanted to proceed with.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/sketch1.png" />
+                    <p>Here you see an example of how the first sketches looked. At this stage we came up with the
+                        idea of showing all the school's courses at HOME.
 
-                    <br><br>
-                    Here you see an example of how the first sketches looked. At this stage we came up with the idea of
-                    showing all the school's courses at HOME. We also tried to answer the users' need for more moving
-                    material on the website by having videos about the school.
-                </p>
-                <!-- Bild -->
-            </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen DEFINE -->
-                <img class="content_div_image" alt="Bild på konceptskisser" src="images/sketch1.png" />
-            </div>
-        </div>
-
-        <div class="flexbox_div3">
-            <div id="left_content_div2"> <!-- Vänstra delen av innehållet för sektionen CREATE PERSONAS -->
-                <p>When we ideated, we worked with a “mobile-first” approach, as it is becoming more and more common to
-                    surf via mobile these days. Therefore, we outlined solutions for both mobile and desktop.
-                    <br><br>Here is a sitemap that represents the hierarchy of the new site, what sections are on each
-                    page and how to get from one page to another. We have added the "Inför studier"-page, which did not
-                    exist before.
-                </p>
-            </div>
-            <div id="right_content_div2"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
-                <img class="content_div_image" alt="Bild på sitemap" src="images/sitemap.jpg" /> <!-- Bild -->
-            </div>
-        </div>
-
-
-        <div class="fullscreen_image_div">
-            <img class="fullscreen_image" alt="Bild på färgtempelet" src="images/colortempelet.png" /> <!-- Bild -->
-        </div>
-
-    </div>
-
-    <div class="content">
-
-        <span id="6"></span>
-        <div class="flexbox_div1">
-
-            <div class="case_study_section_title">
-                <h3>PROTOTYPE</h3> <!-- Rubrik för sektionen PROTOTYPE  -->
-            </div>
-            <div class="ingress">
-                <p>To visualize our ideas in physical form, we created a prototype for mobile and one for
-                    desktop. The desktop hifi prototype can be seen
-                    by clicking on the image below.</p>
-            </div>
-        </div>
-
-        <div class="fullscreen_image_div2">
-            <a href="https://www.figma.com/proto/4YwJxfoYfx3LOhuhqx2fgX/F%C3%B6rb%C3%A4ttra-CHAS?page-id=0%3A1&node-id=125-4264&viewport=600%2C649%2C0.12&scaling=scale-down-width&starting-point-node-id=125%3A4264"
-                target="_blank">
-                <div class="container">
-                    <img src="images/desktop1.png" alt="Bild på olika vyer av arbetet" class="other_work_image">
+                        We also tried to answer the users' need for more moving material on the website by having videos
+                        about the school.</p>
                     <!-- Bild -->
-                    <div class="middle">
-                        <div class="other_work_btn_text">View prototype</div>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>When we ideated, we worked with a “mobile-first” approach, as it is becoming more and more common
+                        to
+                        surf via mobile these days. Therefore, we outlined solutions for both mobile and desktop.
+
+                        Here is a sitemap that represents the hierarchy of the new site, what sections are on each page
+                        and
+                        how to get from one page to another. We have added the "Inför studier"-page, which did not exist
+                        before.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/sitemap.jpg" />
+                    <br><br>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/colortempelet.png" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>4. Prototype</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>To visualize our ideas in physical form, we created a prototype for mobile and one for desktop.
+                        The
+                        desktop hifi prototype can be seen by clicking on the image below.</p>
+                    <div class="fullscreen_image_div2">
+                        <a href="https://www.figma.com/proto/4YwJxfoYfx3LOhuhqx2fgX/F%C3%B6rb%C3%A4ttra-CHAS?page-id=0%3A1&node-id=125-4264&viewport=600%2C649%2C0.12&scaling=scale-down-width&starting-point-node-id=125%3A4264"
+                            target="_blank">
+                            <div class="container">
+                                <img src="images/desktop1.png" alt="Bild på olika vyer av arbetet"
+                                    class="other_work_image">
+                                <!-- Bild -->
+                                <div class="middle">
+                                    <div class="other_work_btn_text">View prototype</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="fullscreen_image_text">
+                        We first started working with wireframes to show how the idea fits together and determine the
+                        position of the various components. Then a more detailed hi-fi prototype was created that better
+                        represents our vision of the school's new website. We made the prototype clickable, which became
+                        useful later during user testing.</p>
+                    <div class="horizontal_image_div2"> <!-- Div med bilder -->
+                        <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi1.png" />
+                        <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi2.png" />
+                        <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi3.png" />
+                    </div>
+
+                    <div class="horizontal_image_div2"> <!-- Div med bilder -->
+                        <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp1.png" />
+                        <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp2.png" />
+                        <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp3.png" />
                     </div>
                 </div>
-            </a>
-            <p class="fullscreen_image_text">
-                We first started working with wireframes to show how the idea fits together and determine the position
-                of the various components. Then a more detailed hi-fi prototype was created that better represents our
-                vision of the school's new website. We made the prototype clickable, which became useful later during
-                user testing.
-        </div>
-
-        <div class="horizontal_image_div2"> <!-- Div med bilder -->
-            <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi1.png" />
-            <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi2.png" />
-            <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi3.png" />
-        </div>
-
-        <div class="horizontal_image_div2"> <!-- Div med bilder -->
-            <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp1.png" />
-            <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp2.png" />
-            <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp3.png" />
-        </div>
-
-    </div>
-
-    <div class="content">
-
-        <span id="7"></span>
-        <div class="flexbox_div1">
-
-            <div class="case_study_section_title">
-                <h3>TEST</h3><!-- Rubrik för sektionen TEST  -->
             </div>
         </div>
 
-        <div class="flexbox_div2">
-            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen TEST -->
-                <img class="content_div_image" alt="Bild på användartest" src="images/usertest.jpg" />
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>5. Test</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
             </div>
-            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen TEST -->
-                <p>To test our solutions, we booked user tests with the users.<br><br>
 
-                    We wrote a usability testing script together. With the script, we planned all the tasks that the
-                    user needed to complete during the user test to test the website. We performed 7
-                    pieces of scenario-based user tests where the user had to live into different scenarios in order to
-                    perform tasks.
-                    We ended with a few short questions.
-                </p>
-            </div>
-        </div>
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>To test our solutions, we booked user tests with the users. We wrote a usability testing script
+                        together. With the script, we planned all the tasks that the user needed to complete during the
+                        user
+                        test to test the website. We performed 7 pieces of scenario-based user tests where the user had
+                        to
+                        live into different scenarios in order to perform tasks. We ended with a few short questions.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/usertest.jpg" />
+                    <p>After the test, we compiled everyone's notes and looked for patterns and common factors. We got a
+                        more positive impression of our updated version. Those who were familiar with how the site
+                        looked
+                        before found the new version to be more inspiring. Users also appreciated our new page "Inför
+                        studier", which compiled everything that might be good to think about before starting
+                        school.<br><br>
 
-
-        <div class="flexbox_div3">
-            <div class="left_content_div"> <!-- Understa delen av innehållet för sektionen TEST -->
-                <p>After the test, we compiled everyone's notes and looked for patterns and common factors. We got a
-                    more positive impression of our updated version. Those who were familiar with how the site looked
-                    before found the new version to be more inspiring. Users also appreciated our new page "Inför
-                    studier", which compiled everything that might be good to think about before starting
-                    school.<br><br>
-
-                    There was also room for improvement. Among other things, we saw that people were sometimes bothered
-                    by the fact that there was too much text on the website. This resulted in too much scrolling on the
-                    pages. The body text was also too large in some places. By observing the users, we noticed that they
-                    were looking for "important dates" on the "Inför studier"-page instead of on the "Så ansöker
-                    du"-page
-                    where it actually was. Beyond what I mentioned, we received a lot of useful information that
-                    can be used to further improve the prototype.
-                </p>
+                        There was also room for improvement. Among other things, we saw that people were sometimes
+                        bothered
+                        by the fact that there was too much text on the website. This resulted in too much scrolling on
+                        the
+                        pages. The body text was also too large in some places. By observing the users, we noticed that
+                        they
+                        were looking for "important dates" on the "Inför studier"-page instead of on the "Så ansöker
+                        du"-page
+                        where it actually was. Beyond what I mentioned, we received a lot of useful information that
+                        can be used to further improve the prototype.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -650,19 +614,32 @@
         </div>
     </div> -->
 
-    <div class="boxdiv"> <!--Test-->
-        <p><b>The pitch</b><br><br> <!--Test2-->
-            Here is my recorded presentation where I pitch my suggestions for improvement to the
-            company.<br><br>
-            Opens in a new tab - 10 min long (Swedish)<br><br></p>
+    <div class="section_content">
+        <div class="content">
+            <span id="112"></span>
 
-        <div class="fullscreen_image_div123"> <!--Test3-->
-            <a href="https://www.canva.com/design/DAFc_NVgxSI/Gi_EQinnRIznXNzxAK1EPw/view?utm_content=DAFc_NVgxSI&utm_campaign=designshare&utm_medium=link&utm_source=recording_view"
-                target="_blank">
-                <div class="container">
-                    <img src="images/video_thumbnail.png" alt="Bild på olika vyer av arbetet" class="other_work_image">
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>The pitch</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
                 </div>
-            </a>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>Here is my recorded presentation where I pitch my suggestions for improvement to the
+                        company.<br>
+                        Opens in a new tab - 10 min long (Swedish)</p>
+                    <div class="fullscreen_image_div123"> <!--Test3-->
+                        <a href="https://www.canva.com/design/DAFc_NVgxSI/Gi_EQinnRIznXNzxAK1EPw/view?utm_content=DAFc_NVgxSI&utm_campaign=designshare&utm_medium=link&utm_source=recording_view"
+                            target="_blank">
+                            <div class="container">
+                                <img src="images/video_thumbnail.png" alt="Bild på olika vyer av arbetet"
+                                    class="other_work_image">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -688,366 +665,688 @@
                 </div>
             </div>
         </section>
+    </div>
 
+    <div class="section_content">
         <div class="content">
+            <span id="4"></span>
 
             <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
                 <div class="case_study_section_title">
-                    <h3>Intro och arbetssätt</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
-                </div>
-                <div class="ingress">
-                    <p>
-                        <!---- Vi fick ett uppdrag att skapa en digital tjänst som skulle underlätta med däckskifte för
-                        verkstäderna där de fiktiva investerarna HarMycketPengar AB anlitade oss. Det var fri tolkning på hur vi
-                        skulle lösa det här problemet, och väl inne i projektet så utökades det även och vi behövde
-                        hitta ett sätt att tjäna pengar genom tjänsten året om.<br><br>-->
-
-                        Vi fick ett uppdrag att skapa en digital tjänst som skulle underlätta med däckskifte för
-                        privatpersoner och verkstäder av de fiktiva investerarna HarMycketPengar AB.
-                        Investmentbolaget idetifierade ett behov på marknaden för privatpersoner att kunna boka skifte
-                        av däck inför vinter- och sommarsäsongen och anlitade därför oss.
-                        Tjänsten skulle vara pedagogisk och enkel att använda och skulle låta privatpersoner boka tid
-                        hos närmsta verkstad för däckskifte. Utöver det så var det fri tolkning på hur vi skulle lösa
-                        det här problemet. Väl inne i projektet så utökades det och vi behövde
-                        hitta ett sätt att tjäna pengar genom tjänsten året om.<br><br>
-                    </p>
+                    <h3>1. Intro and working method</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
                 </div>
             </div>
 
-            <div class="flexbox_div2">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                    <p> Genom intervjuer samlade vi in behov för de olika intressenterna. Vi intervjuade privatpersoner,
-                        investerararna, en administratör och en bilmekaniker.<br><br>
-                        Utöver det använde vi oss även av andra kravinsamlingstekniker som t.ex. enkäter, desktop
-                        research, konkurrentanalys samt att vi skapade en behovskarta. Vi
-                        arbetade mycket tillsammans och använde oss av verktyg som bland annat Miro, Jira och Figma.
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>
+                        We were given an assignment to create a digital service that would facilitate tire changes for
+                        private individuals and workshops by the fictitious investors HarMycketPengar AB. The investment
+                        company identified a need in the market for private individuals to be able to book a change of
+                        tires for the winter and summer season and therefore hired us.
+
+                        The service would be educational and easy to use and would allow private individuals to book an
+                        appointment with the nearest workshop for a tire change. In addition to that, there was free
+                        interpretation on how we would solve this problem. Once inside the project, it expanded and we
+                        needed to find a way to make money through the service all year round.
                     </p>
-                </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
-                    <img class="content_div_image"
-                        alt="Bild över statestik för om personer har hört talas om skolan innan. 28,6% ja och 71,4% nej."
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
                         src="images/interview.jpg" />
-                </div>
-            </div>
-
-            <div class="flexbox_div3">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                    <img class="content_div_image"
-                        alt="Bild över statestik för Kön i undersökningen. 38,1% kvinnor 69,9% män."
-                        src="images/backlog2.png" /> <!-- Bild -->
-                </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
                     <p>
-                        Utifrån de övergripande behov​en identifierade vi krav som vi sedan bröt ner i mindre delar och
-                        skapade en produktbacklogg som teamet skulle kunna jobba med.​<br><br>
-                        När vi dokumenterade kraven var det viktigt att ha fokus på UX och att få med det viktigaste
-                        utifrån intressenternas perspektiv. I slutet av projektet redovisade vi våra arbeten med fokus
-                        på vår MVP och den prototyp som visualiserade vår vison. Vi lyfte då även fram våra lärdomar och
-                        framgångsfaktorer.
+                        Through interviews, we gathered the needs of the various stakeholders. We interviewed private
+                        individuals, the investors, an administrator and a car mechanic.
 
+                        In addition to that, we also used other requirements collection techniques such as e.g.
+                        surveys, desktop research and competitor analysis. We also created a needs map. We worked
+                        a lot together and used tools such as Miro, Jira and Figma.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/backlog2.png" />
+                    <p>
+                        Based on the overall needs, we identified requirements which we then broke down into smaller
+                        parts and
+                        created a product backlog for the team to work with. It was important to have focus on UX and to
+                        include the most important from the perspective of the stakeholders when we documented the
+                        requirements. At the end of the project, we presented our work with a focus on our MVP and the
+                        prototype that visualized our vision. We then also highlighted what we learned and our success
+                        factors.
                     </p>
                 </div>
             </div>
-
-
-            <div class="flexbox_div1">
+            <div class="flexbox_div112">
 
                 <div class="case_study_section_title">
-                    <h4 class="case_study_section_h3">USER RESEARCH</h4>
+                    <h4 class="case_study_section_h3">User research</h4>
                     <!-- Underrubrik under EMPATHIZE för sektionen USER RESEARCH  -->
                 </div>
             </div>
 
-            <div class="flexbox_div2">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                    <img class="content_div_image"
-                        alt="Bild över statestik för Kön i undersökningen. 38,1% kvinnor 69,9% män."
-                        src="images/dack_chart3.png" /> <!-- Bild -->
-                </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
-                    <p>Den enkät som vi skickade ut till privatpersoner var uppdelad i två delar så att vi i efterhand
-                        kunde skilja svar från personer med bil från personer utan bil. I enkätet ville vi bland annat
-                        undersöka hur villiga människor är att ladda ner appar och hur de vanligtvis
-                        bokar tid. Resultatet visade att de flesta föredrar att boka via en app.
-                        Vi fick in totalt 42 svar från enkäten.
-                    </p>
-                </div>
-            </div>
 
-
-            <div class="flexbox_div3">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                    <p> I intervjun så frågade vi deltagarna vad som spelar in i valet av verkstad. Många svarade då att
-                        närheten var mycket viktig. Detta hjälpte oss att komma vidare i många diskutioner under
-                        arbetet. Det kändes tryggt att hela tiden tänka på vad vi fått fram från vår research för att
-                        inte råka skapa något som ingen behöver.
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>
+                        The survey that we sent out to private individuals was divided into two parts so that we
+                        could
+                        distinguish answers from people with a car from people without a car. In the survey, we wanted,
+                        among other things
+                        examine
+                        how willing people are to download apps and how they typically make appointments. The result
+                        showed that most prefer to book via an app. We received a total of 42 responses from the survey.
                     </p>
-                </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
-                    <img class="content_div_image"
-                        alt="Bild över statestik för om personer har hört talas om skolan innan. 28,6% ja och 71,4% nej."
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/dack_chart3.png" />
+                    <p>
+                        In the interview, we asked the participants what plays a role in the choice of workshop. Many
+                        then answered that
+                        proximity was very important. This helped us move forward in many discussions during
+                        the work.
+                        It felt reassuring to constantly think about what we found out from our research in order not to
+                        accidentally
+                        create
+                        something that no one needs.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
                         src="images/dack_chart2.png" />
+                    <!-- Bild -->
                 </div>
             </div>
         </div>
 
         <div class="content">
-
-            <div class="flexbox_div1">
-
-                <div class="case_study_section_title">
-                    <h3>USER STORY MAP & MVP</h3> <!-- Rubrik för sektionen DEFINE  -->
-                </div>
-                <div class="ingress">
-                    <p>Med hjälp av User story mapping så kunde vi visualisera prioriteringen av våra krav och få fram
-                        en MVP. För att få bra struktur delade vi upp kraven i epics, features och user stories. I vår
-                        User story map visualiserar post-it-lapparna våra user stories.<br><br></p>
-                </div>
-            </div>
-
-            <div class="fullscreen_image_div">
-                <p class="fullscreen_image_description">Version 1:<br><br></p>
-                <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/user_story_map.jpg" />
-                <!--<figure class="zoom" onmousemove="zoom(event)"
-                    style="background-image: url(images/user_story_map.jpg)">
-                    <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/user_story_map.jpg" />
-                </figure>-->
-                <!-- Bild -->
-                <p class="fullscreen_image_text"> Första User Story Mapen gjorde vi på lektionstid. Då visualiserade vi
-                    våra krav och fick fram en MVP uppdelad i epics, features och user stories.</p>
-            </div>
-
-            <div class="fullscreen_image_div">
-                <p class="fullscreen_image_description">Version2:<br><br></p>
-                <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/user_story_map2.jpg" />
-                <!--<figure class="zoom" onmousemove="zoom(event)"
-                    style="background-image: url(images/user_story_map2.jpg)">
-                    <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/user_story_map2.jpg" />
-                </figure>-->
-                <!-- Bild -->
-                <p class="fullscreen_image_text">Då vi insåg att vi inte skulle hinna med så mycket i första releasen
-                    var vi tvungna att minska ner antalet user stories i vår MVP. Detta betyde att vi behövde göra om
-                    vår User Story Map.<br><br> Vi valde att ta bort bland annat inloggningen och fokusera mer på själva
-                    bokningssystemet. Sedan skrev vi om User storiesarna så att det skulle bli lätt överskådliga och tog
-                    med nummret från Jira så att vi kunde hitta tillbaka till den orginella user storyn.
-                    I den här versionen sorterade vi vår User Story Map från vänster till höger på ett sätt som
-                    efterliknar
-                    användarens kundresa genom appen.<br><br>
-                    Lärdomar: Inte för många krav i MVP:n. Bra att göra det lätt överskådligt.</p>
-            </div>
-
-        </div>
-
-        <div class="content">
-            <div class="flexbox_div1">
-
-                <div class="case_study_section_title">
-                    <h3>SITEMAP</h3> <!-- Rubrik för sektionen IDEATE  -->
-                </div>
-                <div class="ingress">
-                    <p>Vi skapade en sitemap för att få en snabb överblick av flödet i appen och vad som skulle finnas
-                        med under de olika kategorierna. </p>
-                </div>
-            </div>
-
-            <div class="flexbox_div2">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen IDEATE -->
-                    <img class="content_div_image" alt="Bild på konceptskisser" src="images/sitemap2.jpg" />
-                </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
-                    <p>För att få en överskådlig blick över appen och dess olika sidor skapade vi en Sitemap.
-                        Med hjälp av den blev det enklare att se hur allt skulle hänga ihop och vilka vyer vi behövde
-                        skapa prototyper för. Kan tyckas onödigt men det blev ett bra skelett att utgå från.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content">
-            <div class="flexbox_div1">
-
-                <div class="case_study_section_title">
-                    <h3>JIRA & SPRINTPLANING</h3> <!-- Rubrik för sektionen IDEATE  -->
-                </div>
-                <div class="ingress">
-                    <p>Vi använde oss av Jira för att strukturera våra krav och arbetade mycket med etiketter för att
-                        göra det lättöverskådligt.</p>
-                </div>
-            </div>
-
-            <div class="fullscreen_image_div">
-                <p class="fullscreen_image_description"><br><br>Våran backlog:<br><br></p>
-                <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/backlog.png" />
-                <!-- Bild -->
-                <p class="fullscreen_image_text">Ett exempel på hur vi delade upp kraven i Jira. Vi delade upp dom i
-                    Epics, Features och User stories. Vi valde att planera sprintar efter olika grupper som hade med
-                    varandra att göra. Vi gav story points till varje story och även en prioritering.</p>
-            </div>
-
-            <div class="fullscreen_image_div">
-                <p class="fullscreen_image_description">Sprint 1:<br><br></p>
-                <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/sprint1.png" />
-                <!-- Bild -->
-                <p class="fullscreen_image_text">Efter denna sprint ska kund kunna boka en tid i appen och information
-                    skickas till CRM systemet.</p>
-            </div>
-
-            <div class="fullscreen_image_div">
-                <p class="fullscreen_image_description">Sprint 2:<br><br></p>
-                <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/sprint2.png" />
-                <!-- Bild -->
-                <p class="fullscreen_image_text">Efter denna sprint ska kund kunna söka och filtrera samt få påminnelser
-                    och notiser.</p>
-            </div>
-
-            <div class="flexbox_div2">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen IDEATE -->
-                    <img class="content_div_image" alt="Bild på konceptskisser" src="images/user_story.png" />
-                </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
-                    <p>
-                        Vi använde oss av gherkinmetoden för att specificera acceptanskriterier för våra user stories
-                        men prövade även på att skriva några
-                        testfall.<br><br>Efter vårt arbete i Jira kände vi att vi hade lärt oss hur man skriver olika
-                        slags acceptanskriterier, hur man skriver en bra user story, hur Jira fungerar och hur man gör
-                        sprint planeringar.
-                        Vi lärde oss även om skillnaden mellan epics, features och user stories.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="content">
-
-            <div class="flexbox_div1">
-
-                <div class="case_study_section_title">
-                    <h3>PROTOTYPE</h3> <!-- Rubrik för sektionen PROTOTYPE  -->
-                </div>
-                <div class="ingress">
-                    <p>
-                        Vi valde att göra tjänsten som en app och vi vill kunna erbjuda olika tjänster till
-                        privatpersoner i hemmet. Först var planen att bara fokusera på däckskifte men när kraven
-                        ändrades så utökade vi det med bland annat rekond och lagning av stenskott.
-                    </p>
-                </div>
-            </div>
-
-            <div class="fullscreen_image_div2">
-                <a href="https://www.figma.com/proto/PJFzLLswF9bzKiGSj1jDmL/D%C3%A4ckskiftaren-prototyp?page-id=0%3A1&type=design&node-id=289-5119&viewport=-974%2C-766%2C0.27&scaling=scale-down&starting-point-node-id=452%3A3470&show-proto-sidebar=1"
-                    target="_blank">
-                    <div class="container">
-                        <img src="images/thumbnail_dack.png" alt="Bild på olika vyer av arbetet"
-                            class="other_work_image">
-                        <!-- Bild -->
-                        <div class="middle">
-                            <div class="other_work_btn_text">View prototype</div>
-                        </div>
-                    </div>
-                </a>
-                <p class="fullscreen_image_text">
-                    Under arbetet med prototypen insåg vi att det var bra att göra en omröstning ifall vi inte kom
-                    överens. Det hjälpte osss att inte fastna för länge.
-                    Vi delade upp arbetet på ett bra sätt så att inte för många satt med samma sak. Innan vi började
-                    prototypa försökte vi komma överens om en gemensam stil. Då blev det enklare att fortsätta arbetet
-                    individuellt.</p>
-            </div>
-
-            <div class="horizontal_image_div2"> <!-- Div med bilder -->
-                <img class="casestudyheroimage_small" alt="Bilder över arbetet med Chas Academy"
-                    src="images/small_screen_dack.png" /> <!-- Bild i banner för liten skärm -->
-            </div>
-
-        </div>
-
-        <div class="content">
+            <span id="4"></span>
 
             <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
                 <div class="case_study_section_title">
-                    <h3>Lärdomar & reflektion</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                    <h3>2. User Story Map & MVP</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
                 </div>
             </div>
 
-            <div class="flexbox_div2">
-                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
-                    <p> Under arbetet har vi lärt oss att försöka undvika att fastna i diskussioner och inte sväva iväg
-                        på sidospår.
-                        Då det var många personer som vill göra sin röst hörd kan det ta tid att komma framåt. Därför
-                        valde vi att rösta om olika beslut.
-                        Vi lärde oss också att det är viktigt att kontrollera enkäten lite extra innan den skickas ut
-                        till allmänheten. Vi råkade skicka ut den när den innehöll några fel vilket resulterade i några
-                        oanvändbara svar.
-                        När vi skulle ska dokumentera kraven testade vi att använda oss av Miro vilket vi insåg inte
-                        passade så bra för just det endamålet. Däremot passar det bra till brainstormning.
-                        I Miro lärde vi oss också att använda oss av frames och döpa dem bra så du kan sök efter dem.
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>
+                        With the help of User story mapping, we were able to visualize the prioritization of our
+                        requirements and come up with an MVP. To get a good structure, we divided the requirements into
+                        epics, features and user stories. In our User story map, the post-it notes visualize our user
+                        stories.
+                        <br><br>Version 1:
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/user_story_map.jpg" />
+                    <p>We made the first User Story Map during class time. Then we visualized our requirements and came
+                        up with one
+                        MVP divided into epics, features and user stories.
+                        <br><br>Version 2:
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/user_story_map2.jpg" />
+                    <p>When we realized that we wouldn't have time to do much in the first release, we had to cut
+                        down the number of user stories in our MVP. This meant that we needed to redo our User Story
+                        Maps.<br><br>
+                        We chose to remove, among other things, the login and focus more on the booking system itself.
+                        Since
+                        we rewrote the User stories so that they would be easy to understand and included the number
+                        from
+                        Jira so we could find our way back to the original user story. In this version
+                        we sorted our User Story Map from left to right in a way that mimics the user's
+                        customer journey through the app.<br><br>
+                        Lessons Learned: Not too many requirements in the MVP. Important to make it easy to understand.
                     </p>
                 </div>
-                <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
+            </div>
+        </div>
 
-                    <p>Under arbetet med prototyperna valde vi att testa prototypen på användare. Vi lät användarna
-                        utföra olika uppgifter i appen. Vi observerade under tiden och antecknade. Dessa användartest
-                        hjälpte oss förbättra appen ytterligare.</p>
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>3. Sitemap</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>We created a sitemap to get a quick overview of the flow of the app and what each category should
+                        contain.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/sitemap2.jpg" />
+                    <p>To get a clear overview of the app and its various pages, we created a Sitemap. With the help of
+                        it, it became easier to see how everything would fit together and which views we needed to
+                        create prototypes for. It may seem unnecessary, but it was a good skeleton to start from.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>4. Jira & Sprintplaning</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>We used Jira to structure our requirements and worked a lot with tags to
+                        do it is easy to understand.
+                        <br><br>Our backlog:
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/backlog.png" />
+                    <p>An example of how we divided the requirements in Jira. We divided them into Epics, Features and
+                        User stories. We chose to plan sprints according to different groups that had to do with each
+                        other. We gave story points to each story and also a priority.
+                        <br><br>Sprint 1:
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/sprint1.png" />
+                    <p>After this sprint, the customer should be able to book an appointment in the app and information
+                        will be sent to the CRM system.
+                        <br><br>Sprint 2:
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/sprint2.png" />
+                    <p>After this sprint, the customer should be able to search and filter as well as receive reminders
+                        and notifications.<br><br>
+                        We used the gherkin method to specify acceptance criteria for our user stories
+                        but
+                        also tried writing some test cases.
+                    </p>
+                    <img class="content_div_image2" alt="Bild på arbetet med affinity diagram"
+                        src="images/user_story.png" />
+                    <p>After our work in Jira, we felt that we had learned how to write different types of acceptance
+                        criteria, how to write a good user story, how Jira works and how to do sprint planning. We also
+                        learned about the difference between epics, features and user stories.
+                    </p>
                 </div>
             </div>
         </div>
 
 
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>5. Prototype</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>We chose to make the service as an app and we wanted to be able to offer different services to
+                        private individuals at home. At first, the plan was to focus only on tire changes, but when the
+                        requirements changed, we expanded it with, among other things, recond and repairing stone
+                        ships.<br><br>
+                    </p>
+                    <div class="fullscreen_image_div2">
+                        <a href="https://www.figma.com/proto/PJFzLLswF9bzKiGSj1jDmL/D%C3%A4ckskiftaren-prototyp?page-id=0%3A1&type=design&node-id=289-5119&viewport=-974%2C-766%2C0.27&scaling=scale-down&starting-point-node-id=452%3A3470&show-proto-sidebar=1"
+                            target="_blank">
+                            <div class="container">
+                                <img src="images/thumbnail_dack.png" alt="Bild på olika vyer av arbetet"
+                                    class="other_work_image">
+                                <!-- Bild -->
+                                <div class="middle">
+                                    <div class="other_work_btn_text">View prototype</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <p><br><br>While working on the prototype, we realized that it was good to have a vote in cases we
+                        couldn't agree. It helped us not get stuck for too long. We divided the work in a good way so
+                        that not too many people sat with the same thing. Before we started prototyping, we tried to
+                        agree on a common style. Then it became easier to continue the work individually.<br><br>
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/small_screen_dack.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+                <div class="case_study_section_title">
+                    <h3>6. Lessons learned & reflection</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                    <p>During the work, we have learned to try to avoid getting stuck in discussions and not drift away
+                        on side tracks.
+                        As there were many people who want to make their voice heard, it may take time to come forward.
+                        Because
+                        we chose to vote on different decisions.
+                        We also learned that it is important to double-check the survey before sending it out
+                        to the public. We happened to send it out when it contained some errors which resulted in some
+                        useless answers.
+                        When we were going to document the requirements, we tested using Miro, which we didn't realize
+                        suited so well for that particular purpose. However, it is well suited for brainstorming.
+                        In Miro we also learned to use frames and name them well so you can search for them
+                        them.<br><br>
+                        During the work with the prototypes, we chose to test the prototype on users. We let the users
+                        perform various tasks in the app. We observed in the meantime and took notes. These user tests
+                        helped us improve the app further.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="content_below_banner">
-
-        <!-- Början av footer -->
-        <footer>
-            <div id="footer_row">
-                <div id="footer_left"> <!--Vänstra delen av footern-->
-                    <h3>Contact me</h3> <!--Rubrik för footern-->
-                    <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br> <!--Email länk-->
-                    <div id="resume">
-                        <a href="CV.doc.pdf" target="_blank"><img id="pdfimage" alt="PDF logga"
-                                src="images/pdf_vector.png" /></a>
-                        <!--PDF ikon-->
-                        <p id="resume_text">
-                            <a href="CV.doc.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a>
-                            <!--Länk till CV-->
-                        </p>
+    <span id="10"></span>
+    <section class="parallax5">
+        <div class="parallax-inner-casestudy">
+            <div id="title_grid_container2">
+                <div id="item1">
+                    <div id="top_div">
+                        <h1 class="title" style="color: #ffffff;">Merchant Hub Qliro AB</h1>
+                        <img class="casestudylogo" alt="Chas Academy logga" src="images/qliro2.png" />
                     </div>
                 </div>
-                <div id="footer_right"> <!--Högra delen av footern-->
-                    <a href="https://www.instagram.com/linusdagerfallvinna/?hl=sv" target="_blank"><img
-                            class="social_media_image" alt="Instagram logga" src="images/instagram.png" /></a>
-                    <a href="https://www.facebook.com/linus.dagerfallvinna.5/" target="_blank"><img
-                            class="social_media_image" alt="Facebook logga" src="images/facebookimage.png" /></a>
-                    <a href="https://github.com/linusdagerfallvinna/" target="_blank"><img class="social_media_image"
-                            alt="Github logga" src="images/githubimage.png" /></a>
-                    <a href="https://www.linkedin.com/in/linus-dagerfall-vinn%C3%A5-7449a313b/" target="_blank"><img
-                            class="social_media_image" alt="Linkedin logga" src="images/linkedinimage.png" /></a>
-                    <!--Ikon för sociala medier-->
+                <div id="item2">
+                    <img class="casestudyheroimage" alt="Bilder över arbetet med Chas Academy"
+                        src="images/qliro3.jpg" />
                 </div>
             </div>
-        </footer>
-        <div class="case_study_section_title321">
-            <div id="footer_left"> <!--Vänstra delen av footern-->
-                <div id="resume">
 
-                    <!--PDF ikon-->
-                    <p>© 2023 LINUS DAGERFALL VINNÅ</p>
+
+            <div id="title_section_small_version">
+                <h1 class="title_small3">Merchant Hub Qliro AB</h1>
+                <img class="casestudyheroimage_small" alt="Bilder över arbetet med Chas Academy"
+                    src="images/qliro3.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <div class="section_content">
+        <div class="content">
+
+            <span id="3"></span>
+            <div class="flexbox_div1">
+                <div class="case_study_section_title">
+                    <h3>Coming soon - Work in progress</h3>
                 </div>
             </div>
-            <div id="footer_right"> <!--Högra delen av footern-->
-                <div id="resume">
-                    <a href="#1" target="_blank">TILL TOPPEN</a>
-                    <a href="#1" target="_blank"><img id="arrowimage" alt="PDF logga" src="images/arrow.png" /></a>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <p>I did my LIA internship at Qliro AB, which is a leading fintech company in the Nordics and which
+                        was listed on Nasdaq Stockholm in 2020. Qliro AB is a payment solution that enables merchants to
+                        offer their customers Qliro's payment method when they shop. When private individuals choose one
+                        of Qliro's payment methods, they receive an invoice that they can pay in the Qliro app or on the
+                        website. It is possible to pay everything at once or a little at a time, now or later. Consumers
+                        can bring forward the payment date or pause the invoice for a return.</p>
                 </div>
             </div>
         </div>
-        <!-- Slutet av footer -->
-        <script src="gallery_script.js"></script>
-        <script src="weather.js"></script>
-        <script src="script2.js"></script>
+    </div>
 
-        <!--<script>
+            <!---- <span id="10"></span>
+    <section class="parallax5">
+        <div class="parallax-inner-casestudy">
+            <div id="title_grid_container2">
+                <div id="item1">
+                    <div id="top_div">
+                        <h1 class="title" style="color: #ffffff;">Merchant Hub Qliro AB</h1>
+                        <img class="casestudylogo" alt="Chas Academy logga" src="images/qliro2.png" />
+                    </div>
+                </div>
+                <div id="item2">
+                    <img class="casestudyheroimage" alt="Bilder över arbetet med Chas Academy"
+                        src="images/chasheroimage.png" />
+                </div>
+            </div>
+
+
+            <div id="title_section_small_version">
+                <h1 class="title_small">Merchant Hub Qliro AB</h1> 
+                <img class="casestudyheroimage_small" alt="Bilder över arbetet med Chas Academy"
+                    src="images/heroimage.png" />
+            </div>
+        </div>
+    </section>
+
+    <div class="section_content">
+        <div class="content">
+
+            <span id="3"></span>
+            <div class="flexbox_div1">
+                <div class="case_study_section_title">
+                    <h3>1. Intro</h3>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <p>I did my LIA internship at Qliro AB, which is a leading fintech company in the Nordics and which
+                        was listed on Nasdaq Stockholm in 2020. Qliro AB is a payment solution that enables merchants to
+                        offer their customers Qliro's payment method when they shop. When private individuals choose one
+                        of Qliro's payment methods, they receive an invoice that they can pay in the Qliro app or on the
+                        website. It is possible to pay everything at once or a little at a time, now or later. Consumers
+                        can bring forward the payment date or pause the invoice for a return.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/phone2.jpg" />
+                    <p>
+                        <br>During this six months I have worked in the "merchant-experience-team" which focuses on
+                        creating
+                        one
+                        good experience for the merchants who sign with Qliro.
+                        The project I will be going through here has to do with the process that traders go through
+                        after signing to be able to start using Qliro's payment method. My mission during that
+                        the project was to design an interface for an internal tool that would be used to
+                        reduce the costs, stakeholders and man hours needed today to get a merchant
+                        launched after signing.
+                        <br><br>
+                        Through interviews I collected needs of the internal stakeholders that could be relevant for
+                        this new platform. We also read old documentation such as a competitor analysis that was done
+                        before. I worked closely with the developers and the product department where it was me and
+                        another designer working through all 5 phases of the design process. Sometimes we collaborated
+                        to, for example, generate ideas for proposed solutions, but most of the time it was independent
+                        work where we divided the work in the project and worked in different directions.
+                    </p>
+                    <h4 class="case_study_section_h3">The problem</h4>
+                    <p>How can we reduce the costs, stakeholders and man hours that are needed today to get a merchant
+                        launched?</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+
+            <span id="3"></span>
+            <div class="flexbox_div1">
+                <div class="case_study_section_title">
+                    <h3>2. Empathize</h3>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <h4 class="case_study_section_h3">First meeting</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <h4 class="case_study_section_h3">External vs Internal</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <h4 class="case_study_section_h3">Previous documentation</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <h4 class="case_study_section_h3">Interviews</h4>
+                    <p>We strived to gather insights and opinions from different stakeholders who were in different
+                        phases of the customer journey. In addition, we were interested in deepening our understanding
+                        of the business. To achieve this goal, I had a meeting with the product manager to gain an
+                        understanding of which stakeholders could be relevant for interviews.<br><br>
+                        I had a meeting with the product manager to get better insights in what people that could be
+                        relevant for an interview. Based on the interviews we would later define who could be relevant
+                        to the project and the new portal.
+                        <br><br>
+                        I then started to prepare for the interviews by writing interview guides.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/interview2.jpg" />
+                    <p>I started to interview different stakeholders internally on Qliro to gather information about
+                        what everyone was doing in every department, what their goals and motivations were and if they
+                        had any problems in their everyday work. During the interviews I asked to record the
+                        participants which made it easier to take notes afterwards. I interviewed 7 different
+                        stakeholders.<br><br>
+                    </p>
+                    <p>The stakeholders I interviewed were:
+                        <li>Integration manager<br></li>
+                        <li>Accounting<br></li>
+                        <li>BCA<br></li>
+                        <li>Merchant support<br></li>
+                        <li>Fraud<br></li>
+                        <li>Tech support<br></li>
+                        <li>Sales<br></li>
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/thinking2.png" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div15">
+                <div class="case_study_section_title">
+                    <h3>3. Define</h3>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <p>After I had collected information from the interviews, I used Figma Jam to compile and categorize
+                        this data. I listened through the recordings. I then translated the findings to my english
+                        speaking colleague in a table. I also got data about other stakeholders at Qliro that I added to
+                        the table.<br><br></p>
+                    <p>The table had these columns:
+                        <li>Relevance<br></li>
+                        <li>Contact person<br></li>
+                        <li>Goals<br></li>
+                        <li>Needs<br></li>
+                        <li>JTBD<br></li>
+                        <li>Motivations<br></li>
+                        <li>Challanges<br></li>
+                        <li>Pain points<br></li>
+                        <li>Other info<br></li>
+                        <li>User stories<br></li>
+                    </p>
+
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/affinity1.jpg" />
+                    <p> <br><br>This method enabled us to gain a better understanding of the views and feelings of
+                        students and staff, as well as to identify problem areas.<br><br></p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/affinity12.jpg" />
+                </div>
+            </div>
+
+            <div class="flexbox_div112">
+
+                <div class="case_study_section_title">
+                    <h4 class="case_study_section_h3">Personas & User Journey Map</h4>
+                </div>
+            </div>
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <p>In a tool called https://app.theydo.com/ we could create personas that were relevant for the
+                        project. In the same tool we could connect all the personas to a user journey map. In the
+                        journey map we added phases for the onboarding that we then divided into steps. We then had JTBD
+                        (jobs to be done), Channels, Experience, Needs, Pains, Notes, Opportunities and Solutions under
+                        each step.<br><br>
+                        In our customer journey, we were able to include all our personas with the help of the
+                        flexible tool theydo.
+
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/persona1.png" />
+                    <br><br>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/persona2.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1">
+                <div class="case_study_section_title">
+                    <h3>4. Ideate</h3>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <div class="case_study_section_title">
+                        <h4 class="case_study_section_h3">Sketches</h4>
+                    </div>
+                    <p>
+                        We then together started to sketch on solutions and the flow. After the session we felt that
+                        everything was much clearer.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/ideate3.jpg" />
+                    <div class="case_study_section_title">
+                        <h4 class="case_study_section_h3">Low fi-prototype v.2:</h4>
+                    </div>
+                    <p>
+                        Later we sat down and started to work on low-fi wireframes. These wireframes were really basic
+                        and used no components at all.</p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/persona1.png" />
+                    <div class="case_study_section_title">
+                        <h4 class="case_study_section_h3">File MVP2:</h4>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <div class="case_study_section_title">
+                        <h4 class="case_study_section_h3">Components for low-fi:</h4>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1">
+                <div class="case_study_section_title">
+                    <h3>5. Prototype (Hi-fi)</h3>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="fullscreen_image_div2">
+                        <a href="https://www.figma.com/proto/4YwJxfoYfx3LOhuhqx2fgX/F%C3%B6rb%C3%A4ttra-CHAS?page-id=0%3A1&node-id=125-4264&viewport=600%2C649%2C0.12&scaling=scale-down-width&starting-point-node-id=125%3A4264"
+                            target="_blank">
+                            <div class="container">
+                                <img src="images/desktop1.png" alt="Bild på olika vyer av arbetet"
+                                    class="other_work_image">
+                                <div class="middle">
+                                    <div class="other_work_btn_text">View prototype</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="fullscreen_image_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="horizontal_image_div2">
+                        <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi1.png" />
+                        <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi2.png" />
+                        <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi3.png" />
+                    </div>
+
+                    <div class="horizontal_image_div2">
+                        <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp1.png" />
+                        <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp2.png" />
+                        <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <span id="4"></span>
+
+            <div class="flexbox_div1">
+                <div class="case_study_section_title">
+                    <h3>6. Test</h3>
+                </div>
+            </div>
+
+            <div class="flexbox_div21">
+                <div class="left_content_div">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img class="content_div_image" alt="Bild på arbetet med affinity diagram"
+                        src="images/usertest.jpg" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>-->
+
+            <div id="content_below_banner">
+
+                <!-- Början av footer -->
+                <footer>
+                    <div id="footer_row">
+                        <div id="footer_left"> <!--Vänstra delen av footern-->
+                            <h3 id="footer_title">Contact me</h3> <!--Rubrik för footern-->
+                            <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br>
+                            <!--Email länk-->
+                            <div id="resume">
+                                <a href="CV.doc.pdf" target="_blank"><img id="pdfimage" alt="PDF logga"
+                                        src="images/pdf_vector.png" /></a>
+                                <!--PDF ikon-->
+                                <p id="resume_text">
+                                    <a href="CV.doc.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a>
+                                    <!--Länk till CV-->
+                                </p>
+                            </div>
+                        </div>
+                        <div id="footer_right"> <!--Högra delen av footern-->
+                            <a href="https://www.instagram.com/linusdagerfallvinna/?hl=sv" target="_blank"><img
+                                    class="social_media_image" alt="Instagram logga" src="images/instagram.png" /></a>
+                            <a href="https://www.facebook.com/linus.dagerfallvinna.5/" target="_blank"><img
+                                    class="social_media_image" alt="Facebook logga"
+                                    src="images/facebookimage.png" /></a>
+                            <a href="https://github.com/linusdagerfallvinna/" target="_blank"><img
+                                    class="social_media_image" alt="Github logga" src="images/githubimage.png" /></a>
+                            <a href="https://www.linkedin.com/in/linus-dagerfall-vinn%C3%A5-7449a313b/"
+                                target="_blank"><img class="social_media_image" alt="Linkedin logga"
+                                    src="images/linkedinimage.png" /></a>
+                            <!--Ikon för sociala medier-->
+                        </div>
+                    </div>
+                </footer>
+                <div class="case_study_section_title321">
+                    <div id="footer_left"> <!--Vänstra delen av footern-->
+                        <div id="resume">
+
+                            <!--PDF ikon-->
+                            <p>© 2023 LINUS DAGERFALL VINNÅ</p>
+                        </div>
+                    </div>
+                    <div id="footer_right2"> <!--Högra delen av footern-->
+                        <div id="resume">
+                            <a href="#1" target="_blank">TO THE TOP</a>
+                            <a href="#1" target="_blank"><img id="arrowimage" alt="PDF logga"
+                                    src="images/arrow.png" /></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slutet av footer -->
+                <script src="gallery_script.js"></script>
+                <script src="weather.js"></script>
+                <script src="script2.js"></script>
+
+                <!--<script>
             window.onscroll = function () { myFunction() };
     
             var navbar = document.getElementById("navbar");
