@@ -2,22 +2,20 @@
     box-sizing: border-box;
 }
 
+
+/*body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}*/
+
 body {
     font-family: 'Georgia';
     line-height: 150%;
     margin: 0;
-    color: #2E2E2E;
+    color: #242424;
     letter-spacing: -0.44px;
     font-size: 1.1rem;
     background-color: #fefdfd;
-}
-
-header {
-    background-color: #f1f1f1;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    z-index: 100;
 }
 
 
@@ -25,7 +23,9 @@ a {
     color: inherit;
 }
 
-ul {}
+ul {
+    
+}
 
 
 #largemenu {
@@ -40,7 +40,7 @@ ul {}
     -moz-transition: max-height 0.4s;
     transition: max-height 0.4s;
     padding-right: 12%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 li a {
@@ -78,6 +78,7 @@ li a#active2 {
 #navbar {
     display: flex;
     justify-content: center;
+    line-height: 100%;
     z-index: 50;
     background-color: #3E5C76;
 }
@@ -96,8 +97,42 @@ li a#active2 {
     color: black;
 }
 
+.banner24 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    background-color: #061C27;
+}
+
+#frame {
+    position: relative;
+
+    width: 20%;
+    height: 320px;
+
+    background: #061C27;
+    background-position: center;
+    background-size: cover;
+}
+
+#myImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
 .parallax {
-    background: url("images/chascasestudybg.png")repeat fixed 100%;
+    background: url("images/chasbg.jpg")repeat fixed 100%;
 }
 
 .parallax123 {
@@ -148,7 +183,7 @@ li a#active2 {
 
 .title {
     text-align: left;
-    color: #2E2E2E;
+    color: #ffffff;
     width: 120%;
     font-size: 140%;
     text-transform: uppercase;
@@ -186,7 +221,7 @@ li a#active2 {
 
 .title_small {
     text-align: left;
-    color: #2E2E2E;
+    color: #ffffff;
     width: 100%;
     font-size: 150%;
     padding-top: 15%;
@@ -242,7 +277,7 @@ li a#active2 {
 
 .casestudylogo {
     float: left;
-    width: 50%;
+    width: 40%;
 
     padding-top: 10%;
 }
@@ -316,17 +351,18 @@ li a#active2 {
 
 #smallscreen_header {
     width: 100%;
-    background-color: white;
+    background-color: #061C27;
     text-align: right;
     box-sizing: border-box;
     cursor: pointer;
-    color: #2E2E2E;
+    color: #FFEFC6;
     display: none;
     font-size: 2.4em;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
+    position: fixed;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     z-index: 100;
 }
@@ -457,6 +493,11 @@ li a#active2 {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+nav {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #main_gallery {
@@ -1260,7 +1301,8 @@ h5 {
 }
 
 .section_content {
-    margin-bottom: 8%;
+    background-color: #ebebeb;
+    padding-bottom: 8%;
 }
 
 .content123 {
@@ -1613,6 +1655,10 @@ h1 {
         padding-top: 0%;
     }
 
+    nav {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:800px) {
@@ -1717,8 +1763,7 @@ h1 {
     }
 
     #footer_row,
-    #case_study_section_title321,
-    .navbar {
+    #case_study_section_title321 {
         flex-direction: column;
     }
 
