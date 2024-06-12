@@ -224,7 +224,7 @@ li a#active2 {
     color: #ffffff;
     width: 100%;
     font-size: 150%;
-    padding-top: 15%;
+    padding-top: 0%;
     padding-bottom: 5%;
     text-transform: uppercase;
     font-family: 'Inter';
@@ -249,7 +249,7 @@ li a#active2 {
     color: #ffffff;
     width: 100%;
     font-size: 150%;
-    padding-top: 0%;
+    padding-top: 15%;
     padding-bottom: 5%;
     text-transform: uppercase;
     font-family: 'Inter';
