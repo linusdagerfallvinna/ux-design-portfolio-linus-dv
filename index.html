@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles3.css" />
     <link rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Gideon Roman' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -15,6 +16,54 @@
     <script src="script.js"></script>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8">
+    <style>
+        h5 {
+            font-family: 'Gideon Roman';
+            line-height: 120%;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 20;
+            line-height: 120%;
+            margin-bottom: 0%;
+            /* 60px */
+            letter-spacing: -0.88px;
+            text-align: center;
+            color: #FFEFC6;
+        }
+
+        h1 {
+            color: #FFEFC6;
+            font-family: 'Gideon Roman';
+            font-size: 90px;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            font-style: normal;
+            line-height: 120%;
+            /* 60px */
+            letter-spacing: -0.88px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:968px) {
+            h5 {
+                font-size: 24px;
+            }
+
+            h1 {
+                font-size: 64px;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            h5 {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 46px;
+            }
+        }
+    </style>
 </head>
 <span id="1"></span>
 
@@ -58,7 +107,11 @@
         <img id="header_image" src="images/forground.png" alt="Bild på mig" />-->
 
         <div id="frame">
-            <img id="myImg" src="images/test_title.png">
+            <!--<img id="myImg" src="images/test_title.png">-->
+            <div id="myImg">
+                <h1>DESIGNER PORTFOLIO</h1>
+                <h5>LINUS DAGERFALL VINNÅ</h5>
+            </div>
             <div class="slide-right">
                 <div class="inner">
                     <img src="images/airbaloon.png" alt="Spinning arrow">
@@ -170,7 +223,7 @@
         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     </div>
 
-    <div class="main2" style="background-color: #061C27; padding-top:6%; padding-bottom:0%;">
+    <div class="main2" style="background-color: #061C27; padding-top:6%; padding-bottom:8%;">
         <h2>About me</h2>
 
         <div class="card_container123" style="padding-top:0%; padding-bottom:10%;">
@@ -195,10 +248,9 @@
                 <img src="images/education3.png" alt="Avatar" style="width:100%; padding-top: 5%;">
             </div>
         </div>
-
     </div>
 
-    <div class="main2" style="background-color: #061C27; padding-top:6%; padding-bottom:8%;">
+    <!--<div class="main2" style="background-color: #061C27; padding-top:6%; padding-bottom:8%;">
         <div class="card_container123" style="margin-top:4%;">
 
             <div class="card" style="background-color: #34252500; padding-top:0px; margin-right: 0%;">
@@ -212,7 +264,7 @@
                     <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb.png" />
                     <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping.png" />
                 </div>
-                <div class="horizontal_image_div5"> <!-- Ikoner för färdigheter  -->
+                <div class="horizontal_image_div5">
                     <img class="sectionimage5" style="padding-top: 0%;" alt="Ikon för Research."
                         src="images/research2.png" />
                     <img class="sectionimage5" alt="Ikon för Requierments." src="images/requirements2.png" />
@@ -222,7 +274,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="banner3"> <!-- Början av banner -->
         <!--<img id="header_image" src="images/test_title.png" alt="Bild på mig" />
